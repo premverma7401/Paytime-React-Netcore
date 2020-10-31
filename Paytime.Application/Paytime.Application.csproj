@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <ItemGroup>
+    <Compile Remove="Companies\**" />
+    <EmbeddedResource Remove="Companies\**" />
+    <None Remove="Companies\**" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Paytime.Domain\Paytime.Domain.csproj" />
+    <ProjectReference Include="..\Paytime.Persistence\Paytime.Persistence.csproj" />
+  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+		<PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Timesheets\" />
+	</ItemGroup>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>

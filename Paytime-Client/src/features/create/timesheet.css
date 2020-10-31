@@ -1,0 +1,10 @@
+.daily-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.each-row {
+  display: inline;
+  flex-direction: column;
+  padding: 10px;
+}
